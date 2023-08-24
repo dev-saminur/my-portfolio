@@ -1,0 +1,305 @@
+.agency {
+  padding-bottom: 120px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 80px;
+  }
+  .top-agenc {
+    .top-left {
+      @include media-breakpoint-between(md, lg) {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      h2 {
+        color: $natto-link-color;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        @include media-breakpoint-down(md) {
+          font-size: 34px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          padding: 0 40px;
+        }
+
+        span {
+          color: $natto-primary-color;
+        }
+      }
+      p {
+        color: $natto-primary-textColor;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 34px;
+        padding-right: 65px;
+        @include media-breakpoint-down(md) {
+          padding-right: 0px;
+          font-size: 16px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          padding: 0 50px;
+        }
+      }
+      button {
+        background: $natto-primary-color;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        color: $natto-white-color;
+        padding: 12px 28px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        @include media-breakpoint-down(md) {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .top-right {
+      margin-bottom: 120px;
+      .service-box {
+        width: 100%;
+        background: $natto-white-color;
+        padding: 24px 58px 24px 24px;
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 24px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        cursor: pointer;
+        @include media-breakpoint-down(md) {
+          padding: 30px 10px;
+          flex-direction: column;
+        }
+        @include media-breakpoint-up(lg) {
+          padding: 24px;
+        }
+        @include media-breakpoint-up(xl) {
+          padding: 24px 58px 24px 24px;
+        }
+        &:nth-child(2) {
+          margin-left: 50px;
+          @include media-breakpoint-down(md) {
+            margin-left: 0px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            margin-left: 0px;
+          }
+          @include media-breakpoint-up(lg) {
+            margin-left: 0px;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-left: 50px;
+          }
+        }
+        .service-icon {
+          width: 64px;
+          height: 64px;
+
+          background: $natto-primary-color;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          @include media-breakpoint-down(md) {
+            margin-right: 10px;
+            margin-bottom: 20px;
+          }
+        }
+        .service-heading {
+          width: 80%;
+          @include media-breakpoint-down(md) {
+            text-align: center;
+          }
+          h4 {
+            font-size: 24px;
+            color: $natto-link-color;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include media-breakpoint-down(md) {
+              font-size: 22px;
+              line-height: 26px;
+            }
+            @include media-breakpoint-up(lg) {
+              line-height: 26px;
+            }
+          }
+          p {
+            font-size: 18px;
+            color: $natto-primary-textColor;
+            font-weight: 400;
+            @include media-breakpoint-down(md) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-agenc {
+    .bottom-left {
+      position: relative;
+      .shape {
+        position: absolute;
+        bottom: -72px;
+        right: 85px;
+        width: 210px;
+        height: 210px;
+        background: $natto-primary-color;
+        border-top-right-radius: 100px;
+        border: 15px solid $natto-white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+          bottom: -72px;
+          left: 0px;
+          width: 150px;
+          height: 150px;
+          border: 8px solid $natto-white-color;
+        }
+        @include media-breakpoint-between(md, lg) {
+          bottom: -72px;
+          right: 85px;
+        }
+        .shape-text {
+          text-align: center;
+          h4 {
+            color: $natto-white-color;
+            font-size: 42px;
+            font-weight: 700;
+
+            @include media-breakpoint-down(md) {
+              font-size: 30px;
+            }
+          }
+          p {
+            color: $natto-white-color;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 0;
+            @include media-breakpoint-down(md) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .image {
+        max-width: 500px;
+        border-top-left-radius: 250px;
+        border-top-right-radius: 250px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .bottom-right {
+      .header {
+        @include media-breakpoint-between(md, lg) {
+          margin-top: 100px;
+          text-align: center;
+        }
+        h2 {
+          color: $natto-link-color;
+          font-size: 40px;
+          line-height: 48px;
+          margin-bottom: 24px;
+          font-weight: 700;
+          @include media-breakpoint-down(md) {
+            font-size: 34px;
+            margin-top: 90px;
+            line-height: 40px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            padding: 0 40px;
+          }
+          span {
+            color: $natto-primary-color;
+          }
+        }
+        p {
+          color: $natto-primary-textColor;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          margin-bottom: 15px;
+          @include media-breakpoint-down(md) {
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            padding: 0 40px;
+          }
+        }
+      }
+      li {
+        color: $natto-primary-textColor;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        @include media-breakpoint-down(md) {
+          font-size: 13px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          margin-left: 40px;
+        }
+        svg {
+          margin-right: 10px;
+        }
+      }
+      button {
+        background: $natto-primary-color;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $natto-white-color;
+        padding: 12px 28px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        @include media-breakpoint-between(md, lg) {
+          margin-left: 40px;
+        }
+      }
+    }
+    .my-progress {
+      @include media-breakpoint-between(md, lg) {
+        margin: 0 40px;
+      }
+      .member {
+        h2 {
+          color: $natto-link-color;
+          font-size: 48px;
+          margin-bottom: 15px;
+          @include media-breakpoint-down(md) {
+            font-size: 38px;
+          }
+        }
+        p {
+          color: $natto-primary-textColor;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          @include media-breakpoint-down(md) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

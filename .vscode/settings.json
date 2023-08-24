@@ -1,0 +1,17 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "html.format.contentUnformatted": "",
+  "html.format.indentInnerHtml": true,
+  "json.schemas": [
+
+  ],
+  "emmet.preferences": {
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+    
+    }
+  }
+}

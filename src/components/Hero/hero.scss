@@ -1,0 +1,101 @@
+.hero-section {
+  .hero-content {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    h1 {
+      color: $natto-link-color;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 90px;
+      @include media-breakpoint-down(md) {
+        font-size: 35px;
+        line-height: 52px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 50px;
+        line-height: 90px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 60px;
+        line-height: 90px;
+      }
+      @include media-breakpoint-up(xxl) {
+        font-size: 72px;
+        width: 110%;
+        line-height: 90px;
+      }
+      span:first-child {
+        background: $natto-primary-color;
+        color: $natto-white-color;
+        padding: 3px 10px 3px 15px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      span:nth-child(2) {
+        margin: 0px 20px;
+      }
+      span:last-child {
+        color: $natto-primary-color;
+      }
+    }
+    p {
+      color: $natto-primary-textColor;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 32px;
+      padding-right: 110px;
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
+    }
+
+    .hero-button {
+      button {
+        color: $natto-white-color;
+        background: $natto-primary-color;
+        font-size: 20px;
+        padding: 18px 32px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        margin-right: 40px;
+        margin-bottom: 40px;
+      }
+      a {
+        color: $natto-link-color;
+        font-size: 20px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        svg {
+          margin-left: 15px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .hero-social {
+      .follow {
+        a {
+          color: $natto-link-color;
+          font-size: 18px;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  .hero-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
